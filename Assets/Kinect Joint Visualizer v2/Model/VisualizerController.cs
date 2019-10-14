@@ -6,7 +6,7 @@ namespace KinectJointVisualizerV2
 {
     public class VisualizerController
     {
-        static VisualizerController Instance = new VisualizerController();
+        public static VisualizerController Instance = new VisualizerController();
 
         public KinectJointDataModel JointDataModel;
 
