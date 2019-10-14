@@ -11,27 +11,27 @@ namespace KinectJointVisualizerV2
 {
     public class KinectJointDataModel
     {
-        public ReactiveDictionary<Kinect.JointType, Quaternion> _joints = new ReactiveDictionary<Kinect.JointType, Quaternion>()
+        public ReactiveDictionary<Kinect.JointType, JointData> _joints = new ReactiveDictionary<Kinect.JointType, JointData>()
         {
-            { Kinect.JointType.Head, Quaternion.identity },
-            { Kinect.JointType.Neck, Quaternion.identity },
-            { Kinect.JointType.SpineShoulder, Quaternion.identity },
-            { Kinect.JointType.ShoulderLeft, Quaternion.identity },
-            { Kinect.JointType.ShoulderRight, Quaternion.identity },
-            { Kinect.JointType.ElbowLeft, Quaternion.identity },
-            { Kinect.JointType.ElbowRight, Quaternion.identity },
-            { Kinect.JointType.WristLeft, Quaternion.identity },
-            { Kinect.JointType.WristRight, Quaternion.identity },
-            { Kinect.JointType.SpineMid, Quaternion.identity },
-            { Kinect.JointType.SpineBase, Quaternion.identity },
-            { Kinect.JointType.HipLeft, Quaternion.identity },
-            { Kinect.JointType.HipRight, Quaternion.identity },
-            { Kinect.JointType.KneeLeft, Quaternion.identity },
-            { Kinect.JointType.KneeRight, Quaternion.identity },
-            { Kinect.JointType.AnkleLeft, Quaternion.identity },
-            { Kinect.JointType.AnkleRight, Quaternion.identity },
-            { Kinect.JointType.FootLeft, Quaternion.identity },
-            { Kinect.JointType.FootRight, Quaternion.identity },
+            { Kinect.JointType.Head, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.Neck, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.SpineShoulder, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.ShoulderLeft, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.ShoulderRight, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.ElbowLeft, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.ElbowRight, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.WristLeft, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.WristRight, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.SpineMid, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.SpineBase, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.HipLeft, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.HipRight, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.KneeLeft, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.KneeRight, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.AnkleLeft, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.AnkleRight, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.FootLeft, new JointData(Vector3.zero, Quaternion.identity) },
+            { Kinect.JointType.FootRight, new JointData(Vector3.zero, Quaternion.identity) },
         };
     }
 }

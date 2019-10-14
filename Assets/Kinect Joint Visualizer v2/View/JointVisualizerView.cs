@@ -52,10 +52,10 @@ namespace KinectJointVisualizerV2
             };
         }
 
-        public void SetBoneTransform(Kinect.JointType type, Vector3 pos, Quaternion rot)
+        public void SetBoneTransform(Kinect.JointType type, JointData joint)
         {
-            joint_table[type].transform.position = pos;
-            joint_table[type].transform.rotation = rot;
+            joint_table[type].transform.position = joint.pos;
+            joint_table[type].transform.rotation = joint.rot;
         }
     }
 }
