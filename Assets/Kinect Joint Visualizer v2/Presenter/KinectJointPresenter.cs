@@ -20,7 +20,7 @@ namespace KinectJointVisualizerV2
             VisualizerController.Instance.JointDataModel._joints.ObserveReplace()
                 .Subscribe(x =>
                 {
-                    _view.SetBoneTransform(x.Key, Vector3.one, x.NewValue);
+                    _view.SetBoneTransform(x.Key, x.NewValue);
                 });
         }
     }
