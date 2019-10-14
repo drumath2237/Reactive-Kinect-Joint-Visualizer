@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VisualizerController : MonoBehaviour
+namespace KinectJointVisualizerV2
 {
-    // Start is called before the first frame update
-    void Start()
+    public class VisualizerController
     {
-        
-    }
+        static VisualizerController Instance = new VisualizerController();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public KinectJointDataModel JointDataModel;
+
+        public VisualizerController()
+        {
+            JointDataModel = new KinectJointDataModel();
+        }
     }
 }
