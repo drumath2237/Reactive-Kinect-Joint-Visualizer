@@ -9,7 +9,7 @@ namespace KinectJointVisualizerV2
     public class JointUtility
     {
 
-        public const float JOINT_SCALE = 1.0f;
+        public const float JOINT_SCALE = 10.0f;
         public static Vector3 GetJointPos(Kinect.Body body, Kinect.JointType type)
         {
             return new Vector3(
