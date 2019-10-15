@@ -48,6 +48,8 @@ namespace KinectJointVisualizerV2
             _bodySource = BodySource.GetComponent<BodySourceManager>();
 
             _joints.ObserveReplace()
+                .Where(x=>x.NewValue.pos!=x.OldValue.pos)
+                .Where(x=>x.NewValue.rot!=x.OldValue.rot)
                 .Subscribe(x =>
                 {
                     VisualizerController.Instance.JointDataModel._joints[x.Key] = x.NewValue;
@@ -66,7 +68,6 @@ namespace KinectJointVisualizerV2
                             JointUtility.GetJointPos(_body, k),
                             JointUtility.GetJointRot(_body, k)
                         );
-                        //Debug.Log(_joints[k].pos);
                     }
                 }
             });
