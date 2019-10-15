@@ -54,7 +54,7 @@ namespace KinectJointVisualizerV2
 
         public void SetBoneTransform(Kinect.JointType type, JointData joint)
         {
-            Debug.Log("value changed!");
+            //Debug.Log("value changed!");
             joint_table[type].transform.position = joint.pos;
             joint_table[type].transform.rotation = joint.rot;
             joint_table[type].name = type.ToString();
